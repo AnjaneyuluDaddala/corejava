@@ -49,7 +49,6 @@ public class Arraylist1 {
 		onePlus.MobileFeatures("8GB RAM", "128GB","5000 mAh  Battery" );
 		
 		
-		
 		mobileList.add(samsung);
 		mobileList.add(onePlus);
 		
@@ -59,7 +58,7 @@ public class Arraylist1 {
 		
 		amazon.put("mobiles",mobileList);
 		
-	     amazon.get(mobileList);
+	    amazon.get(mobileList);
 		
 		 Iterator iterator=amazon.get(mobileList).iterator();
 		
