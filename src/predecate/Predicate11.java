@@ -14,11 +14,16 @@ public class Predicate11 {
         
         Predicate<Employee> ref=emp->emp.getAge()<60;
         
-        for(Employee employee:empList) {
+        for(Employee employee :empList) {
         	System.out.println(ref.test(employee)==true?employee.getName()+" is elgible for health insurance":
         		employee.getName()+" is not elgible for health insurance");
         			
         }
+        
+        
+       
+        
+        
 	}
 
 }

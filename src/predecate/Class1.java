@@ -5,7 +5,7 @@ import java.util.function.Predicate;
 public class Class1 {
 	
 	static boolean m1(Employee x) {
-		if(x.getAge()>18&&x.getName().startsWith("K")) {
+		if(x.getAge()>18 && x.getName().startsWith("K")) {
 			return true;
 		}
 		else {

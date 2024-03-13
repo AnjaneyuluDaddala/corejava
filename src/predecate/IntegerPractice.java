@@ -1,9 +1,12 @@
 package predecate;
 
+import java.util.function.Predicate;
+
 public class IntegerPractice {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Predicate<Integer> ref=str->Integer.sum(9, 10)<200;
+		System.out.println(ref.test(1));
 
 	}
 

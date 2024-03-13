@@ -14,7 +14,7 @@ public class Wnnn {
 	}
 	
 	
-static String upperCase(String str) {
+static String upperCaase(String str) {
 	
 	Supplier<String>ref1=()->{return str.toUpperCase();};
 	

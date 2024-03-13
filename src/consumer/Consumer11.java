@@ -1,11 +1,11 @@
 package consumer;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
 import predecate.Employee;
+
 public class Consumer11 {
 
 	public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class Consumer11 {
 		Iterator<String> it=al.iterator();
 		
 		Consumer<String> consume=a->{
-			String name=a.concat("  Mr.");
+			String name=a.concat("  Mr.")+ it.next();
 			
 			System.out.println( name);
 		};
@@ -37,15 +37,33 @@ public class Consumer11 {
 		
 		
 		ArrayList<Employee>array=new ArrayList<Employee>();
+		
 		array.add(emp);
 		array.add(emp1);
 		array.add(emp2);
 		
 		
+		
+         ArrayList  array1=new ArrayList();
+         array1.add(12);
+         array1.add("ram");
+         System.out.println(array1);
+        
+        
+		
+		array.add(emp);
+		array.add(emp1);
+		array.add(emp2);
+		
+		
+		
+		
+		
 		Iterator<Employee> itr=array.iterator();
-		Consumer< Employee> cons=a->System.out.println(a);
+		Consumer<Employee> cons=a->System.out.println(a.getName().toUpperCase()+" and age is :  " +a.getAge());
 		itr.forEachRemaining(cons);
 
 	}
 
 }
+

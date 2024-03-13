@@ -1,3 +1,4 @@
+
 package predecate;
 
 public class UseScanner {
