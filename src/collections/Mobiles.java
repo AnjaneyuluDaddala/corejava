@@ -2,22 +2,22 @@ package collections;
 
 public class Mobiles extends Choosen { 
 	
+	 public Mobiles(String mobileName, double originalPrice) {
+		super();
+		this.mobileName = mobileName;
+		this.originalPrice = originalPrice;
+	}
+
 	String mobileName;
-	double originalPrice;
+	 double originalPrice;
 
 	
-	Mobiles(String mobileName,double originalPrice){
-	
-		this.mobileName=mobileName;
-		this.originalPrice=originalPrice;
-		
-	}
-     void Discount(double DiscountPrice){
+    public void Discount(double DiscountPrice){
     	 System.out.println("Discountprice"+DiscountPrice);
 	
 	}
 	
-	void MobileFeatures(String Ram,String Storage,String Battery) {
+	public void MobileFeatures(String Ram,String Storage,String Battery) {
 		
 		
 		
@@ -26,11 +26,22 @@ public class Mobiles extends Choosen {
 		System.out.println("Battery life"+Battery);
 		
 	}
-	
-	
 
-	
-		
+	public String getMobileName() {
+		return mobileName;
+	}
+
+	public void setMobileName(String mobileName) {
+		this.mobileName = mobileName;
+	}
+
+	public double getOriginalPrice() {
+		return originalPrice;
+	}
+
+	public void setOriginalPrice(double originalPrice) {
+		this.originalPrice = originalPrice;
+	}
 
 	}
 

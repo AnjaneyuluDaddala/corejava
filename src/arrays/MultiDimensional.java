@@ -14,18 +14,28 @@ public class MultiDimensional {
 	int[][] arr=new int[row][col];
 	
 	
+	
+	
 	for(int i=1;i<row;i++ ) {
 		for(int j=0;j<col;j++) {
 			System.out.print("The arr["+i+"]"+"["+j+"]= ");
 			arr[i][j]=sc.nextInt();
+			
+			
 		}
 		
 	}
+
 	for(int i=1;i<row;i++ ) {
 		for(int j=0;j<col;j++) {
 			System.out.println(arr[i][j]+" ");
+			
 		}
+		
+		
 	}
+	
+	
 
 }
 }
