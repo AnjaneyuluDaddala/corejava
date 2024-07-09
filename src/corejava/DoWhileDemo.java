@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class DoWhileDemo {
 
 	  public static void main(String[] args) {
-	    int option=0;
+	    int option;
 	    String continueYN = "N";
 	    
 	    do {

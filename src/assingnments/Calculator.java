@@ -2,8 +2,6 @@ package assingnments;
 
 public interface Calculator {
 	
-	
-	
 	static int add(int a,int b) {
 		
 		return a+b;
@@ -36,10 +34,6 @@ public interface Calculator {
 		
 		return Math.cos(a);
 	}
-	
-
-		
-		
 
 	}
 

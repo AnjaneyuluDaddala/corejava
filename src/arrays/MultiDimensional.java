@@ -16,7 +16,7 @@ public class MultiDimensional {
 	
 	
 	
-	for(int i=1;i<row;i++ ) {
+	for(int i=0;i<row;i++ ) {
 		for(int j=0;j<col;j++) {
 			System.out.print("The arr["+i+"]"+"["+j+"]= ");
 			arr[i][j]=sc.nextInt();
@@ -26,7 +26,7 @@ public class MultiDimensional {
 		
 	}
 
-	for(int i=1;i<row;i++ ) {
+	for(int i=0;i<row;i++ ) {
 		for(int j=0;j<col;j++) {
 			System.out.println(arr[i][j]+" ");
 			

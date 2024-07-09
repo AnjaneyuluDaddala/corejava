@@ -4,13 +4,13 @@ public class ReversingNumber {
 	
 	public int reverse(int num) {
 		
-		int sum=0,r;
+		int reverseN=0,r;
 		while(num>0) {
 			r=num%10;
-			sum=sum*10+r;
+			reverseN=reverseN*10+r;
 			num=num/10;
 		}
-		return sum;
+		return reverseN;
 		
 	}
 
