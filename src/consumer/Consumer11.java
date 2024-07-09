@@ -24,6 +24,7 @@ public class Consumer11 {
 			
 			System.out.println( name);
 		};
+		
 				
 		it.forEachRemaining(consume);
 		

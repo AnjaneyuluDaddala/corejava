@@ -14,7 +14,7 @@ public class Project1{
 	ArrayList<Student>  studentList = new ArrayList<Student>();
 	
 	
-	 void getJdbc (Student set) throws Exception{
+	 void getJdbc () throws Exception{
 		String url="jdbc:mysql://localhost:3306/student";
 		String username="root";
 		String password="Anji@123";
@@ -22,6 +22,9 @@ public class Project1{
 		
 		Connection con=DriverManager.getConnection(url,username,password);
 		Statement st=con.createStatement();
+		
+		
+
 		
 	
 
@@ -48,10 +51,9 @@ public class Project1{
 	}
 
 	public static void main(String[] args) throws Exception {
-		 Student set=new Student();
 	     
 	     Project1 p=new Project1();
-	     p.getJdbc(set);
+	     p.getJdbc();
 	    
 	     
 	     //System.out.println(p.studentList);

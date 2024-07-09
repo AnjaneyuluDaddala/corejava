@@ -12,7 +12,7 @@ public class ArrayUsingStream {
 		
 		
 		
-       Integer[]  StudentAge= {21,23,24,22,22,23,36};
+       Integer StudentAge[]= {21,23,24,22,22,23,36};
 		
 		Stream<Integer> Age = Stream.of(StudentAge);
 		

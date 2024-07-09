@@ -17,7 +17,7 @@ public class Class1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-    Employee e1=new Employee("kiran",13,20000.0);
+    Employee e1=new Employee("Kiran",23,20000.0);
     
     Predicate<Employee> pre=(e)->e.getAge()>18;
     Predicate<Employee>pre1=e->e.getName().startsWith("K");
@@ -33,6 +33,7 @@ public class Class1 {
     
     */
     
+   
     Predicate<Employee>combined=pre.and(pre1);
     
     System.out.println(combined.test(e1));
